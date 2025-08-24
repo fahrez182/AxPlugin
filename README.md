@@ -1,6 +1,6 @@
 # TestFunc Plugin
 
-**TestFunc** is a sample plugin built for the **Axeron Manager** plugin system.  
+**TestFunc** is a sample plugin built for the **Axeron Manager / Game Vortex** plugin system.  
 It demonstrates how to structure and configure a plugin using `axplugin.toml` with assets, scripts, and optional binaries.
 
 ---
@@ -38,10 +38,10 @@ description = "A sample plugin demonstrating Axeron Manager structure."
 
 ## 🚀 How to Use
 
-1. Place the `TestFunc/` folder inside your Axeron Manager `plugins/` directory.
-2. Launch Axeron Manager.
+1. Place the `TestFunc/` folder inside your Game Vortex `/GV2R/Plugin/Debug/` directory.
+2. Launch Game Vortex (GV2R).
 3. The plugin should appear with its banner and metadata.
-4. Run the plugin from the Axeron Manager UI.
+4. Run the plugin from the Game Vortex - AxPlugin UI.
 
 ---
 
