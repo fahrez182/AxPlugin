@@ -1,0 +1,4 @@
+#Same as .gitignore
+
+TestIgnoredFolder/
+ThisWillBeIgnoredByLoader

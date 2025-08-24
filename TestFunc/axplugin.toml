@@ -1,0 +1,17 @@
+id="TestFunc"
+name="Function Test"
+author="FahrezONE"
+version="1.3-Test"
+versionCode=100
+description=""
+
+[config]
+webShell="main.html" 
+binaryPath="bin"
+minHeight=252.3 
+minWidth=200
+
+#If you need a custom variable on your html/js
+#Try PluginInfo.fahrezone.say
+[fahrezone]
+say="Hello FahrezONE"

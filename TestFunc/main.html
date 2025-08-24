@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebView JSInterface Test</title>
+  <script src="test.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: monospace;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    h2 {
+      margin-top: 0;
+      color: #90caf9;
+    }
+    button {
+      display: inline-block;
+      margin: 4px 4px 8px 0;
+      padding: 8px 12px;
+      background-color: #1f1f1f;
+      color: #fff;
+      border: 1px solid #333;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    button:hover {
+      background-color: #333;
+    }
+    img {
+      display: block;
+      margin: 8px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.4);
+    }
+    pre {
+      background-color: #1e1e1e;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      border: 1px solid #333;
+      margin-top: 16px;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .card {
+      background: #ffffffcc; /* semi transparan putih */
+      border-radius: 16px;
+      padding: 14px 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .app-header img {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: #cfd8dc;
+      object-fit: cover;
+    }
+
+    .app-info {
+      flex-grow: 1;
+    }
+
+    .app-name {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #222;
+    }
+
+    .app-package {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .app-meta {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: #444;
+    }
+
+    .energy-tag {
+      margin-top: 6px;
+      display: inline-block;
+      background: #d7f1e7;
+      color: #1b5e20;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+    }
+  </style>
+  <script src="/main.js"> </script>
+</head>
+<body>
+  <h2>Test Function</h2>
+  <img id="myImg" width="200px" alt="icon from plugin">
+  
+  <button onclick="Axeron.toast('Toasted!')">Toast!</button>
+  <button onclick="runShell()">Run (Await)</button>
+  <button onclick="runShellRaw()">Run (Await + raw)</button>
+  <button onclick="runShellWithId()">Run (With ID)</button>
+  <button onclick="getInfo()">getPackageInfo</button>
+  <button onclick="getUserPackages(true)">getUserPackages</button>
+  <button onclick="getSystemPackages(false)">getSystemPackages</button>
+  <button onclick="getAddedPackages(true)">getAddedPackages</button>
+  <button onclick="getPackagesByUid(10652, true)">getPackagesByUid</button>
+  <button onclick="openApollo()">openApollo</button>
+  <button onclick="alert('Hello from alert')">alert</button>
+  <button onclick="showPrompt()">prompt</button>
+  <button onclick="openLink()">openLink</button>
+  <button onclick="exit()">exit</button>
+
+  <pre id="output">Output will appear here...</pre>
+</body>
+</html>
