@@ -27,7 +27,6 @@ The plugin metadata and configuration are defined in **`axplugin.toml`**.
 Example fields include:
 
 ```toml
-[plugin]
 id = "testfunc"
 name = "TestFunc"
 version = "1.0.0"
@@ -58,7 +57,6 @@ description = "A sample plugin demonstrating Axeron Manager structure."
 ## 📌 Notes
 
 - Files listed in `.axignore` will not be included in plugin packaging or runtime.
-- `.bak` files are just backups, not loaded by default.
 - This plugin is for demonstration purposes only.
 
 ---
